@@ -1,36 +1,48 @@
 body {
-    background-color: rgb(1, 33, 34);
-}
-#header {
-    background-color: cadetblue;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 80px; 
-    display: flex;
+    background-color: black;
+    font-family: 'Fredoka One', cursive;
 }
 nav {
+    background-image: linear-gradient(120deg, #1b1b1b, black);
+    font-size: 18px;
+    font-weight: bolder;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
     display: flex;
-    font-size: 25px;
+    justify-content: space-between;
 }
-#about {
+#port {
+    color: #5763AB;
+    font-size: 22px;
+}
+#nav-left {
     display: flex;
-    margin: 30px 30px 20px 900px;
+    text-align: left;
 }
-#work {
+nav ul {
     display: flex;
-    margin: 30px 30px 20px 20px;
+    padding: 25px;
+    margin: auto;
 }
-#contact {
-    display: flex;
-    margin: 30px 10px 20px 20px;
+nav ul li {
+    padding: 0px;
+    list-style-type: none;
 }
+nav ul li a {
+    padding: 25px;
+}
+
 .linkk {
     text-decoration: none;
-    color: whitesmoke;
+    color: silver;
 }
 .linkk:hover {
-    color: darkred;
+    background-color: silver;
+    color: #5763AB;
 }
 #content {
     text-align: center;
@@ -38,45 +50,61 @@ nav {
     font-weight: bolder;
     margin: 60px 0px 0px 0px;
     width: 100%;
-    height: 770px; ;
-    background-color: darkslategrey;
-    padding: 300px 0px 0px 0px;
+    height: 100vh; ;
+    background-image: linear-gradient(60deg, black, #1b1b1b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #name {
-    color: floralwhite;
+    color: silver;
 }
 #designation {
-    color: #a0615f;
+    color: #5763AB;
     font-size: 33px;
     margin: 0px 0px 0px 0px;
     font-weight: lighter;
 }
 #projects {
     width: 100%;
-    height: 870px;
-    background-color: rgba(87, 0, 26, 0.911);
+    height: 100vh;
+    background-image: linear-gradient(60deg, #1b1b1b, black);
 }
 #project-name {
-    color: whitesmoke;
+    color: #5763AB;
     text-align: center;
     padding: 30px 0px 0px 0px;
     font-size: 30px;
-    text-decoration: underline;
     margin: 0px 0px 20px 0px;
 }
 #my-projects {
     display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .project {
     display: flex;
-    background-color: rgb(180, 146, 82);
-    width: 30%;
-    height: 450px;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    width: 70%;
+    height: 150px;
+    padding: 0;
+    margin: 20px;
+    border-radius: 10px;
+
 }
-#tribute-img {
-    width: 100%;
-    height: 380px;
+.project:hover {
+    transform: scale(1.05);
+    background-image: linear-gradient(60deg, black, #1b1b1b);
+
+}
+.lin {
+    color: silver;
+    text-decoration: none;
+    font-size: 20px;
 }
 #tribute-text {
     text-align: center;
@@ -125,8 +153,8 @@ nav {
 }
 #contacts {
     width: 100%;
-    height: 870px;
-    background-color: rgba(47, 46, 48, 0.938);
+    height: 100vh;
+    background-image: linear-gradient(60deg, black, #1b1b1b);
 }
 #msg {
     color: whitesmoke;
@@ -136,7 +164,7 @@ nav {
 }
 .logo-img {
     width: 30px;
-    border-radius: 50%;
+    border-radius: 10px;
 }
 #github {
     display: flex;
@@ -157,7 +185,7 @@ nav {
 }
 .site-link {
     text-decoration: none;
-    color: cornsilk;
+    color: silver;
 }
 #icons {
     display: flex;
